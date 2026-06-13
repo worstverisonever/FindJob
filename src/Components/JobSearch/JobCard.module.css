@@ -1,0 +1,149 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#4D59CA;
+    --secondar-color:#7C84E9;
+    --text-title-color:#a2acb8;
+    --background-color: #FFFF;
+    --border-color:#707070;
+}
+
+.list{
+    position: relative;
+    width: 100%;
+  padding: 1rem 1rem !important;  
+    box-shadow: 0 0px 8px 0.5px rgba(141, 135, 135, 0.25);
+    display: grid;
+    justify-items: center;
+    row-gap: 0.5rem;
+    min-height: 15rem;
+    border-radius: 1.4rem;
+    background-color: var(--background-color);
+}
+.list span:first-child{
+    display: grid;
+    justify-items: center;
+    row-gap: 0.5rem;
+}
+.list .removeButton{
+    position:absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+.removeButton.unApplyButton{
+    background-color: #fff;
+    border: none;
+text-align: center;
+width: fit-content;
+height: 25px;
+}
+.list .removeButton button{
+    background-color: #fff;
+    border: none;
+text-align: center;
+width: fit-content;
+height: 25px;
+}
+.removeButton.selected button{
+    background-color: #e7eaed;
+   border-radius: 5px;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.list .removeButton img{
+    width: 1rem;
+    height: 1rem;
+}
+.dropDown {
+    display: none;
+    width: fit-content;
+    top:25px;
+    right: 0;
+    position: absolute;
+    background-color: #ced5de;
+    z-index: 1;
+    border: solid 1px #ced5de;
+    border-radius: 4px;
+    padding: 4px;
+    width: 7rem;
+    text-align: start;
+    border-top-right-radius: 0;
+    padding-left: 3px;
+  }
+  .dropDown.active{
+    display: block;
+  }
+  .dropDown span{
+    width: fit-content;
+  }
+.title{
+    justify-self: start;
+    font-size: clamp(120%,1rem,2rem);
+    margin-bottom: 0;
+    font-family: Graphik;
+    margin-top: 1.3rem !important;
+}
+.info{
+    justify-self: start;
+}
+.info p{
+    display: inline-block;
+    color:#787878;
+    margin-top: 0;
+    margin-bottom: 0.7rem !important;
+}
+.info p:not(:first-child){
+    padding-left: 0.3rem;
+}
+div .icon{
+    width: 2rem;
+    height: 2rem;
+}
+.proberties{
+box-sizing: border-box;
+     display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    column-gap: 0.9rem;
+    row-gap: 0.8rem;
+    padding-bottom: 1rem;
+}
+.proberty{
+    display: inline-block;
+    width:9rem;
+    height: fit-content;
+    text-align: center;
+    padding: 0.5rem 1.303rem !important;
+    background-color: #7C84E9;
+    border-radius: 0.6rem;
+ color: #F1F2F9;
+ margin: 0;
+}
+
+.button{
+   text-align: center;
+   border-color: #707070;
+   border-radius: 2rem;
+   height: 2.3rem;
+   padding: 0rem 3rem;
+}
+
+@media (max-width:320px) {
+    .proberties{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:800px) {
+    .list{
+        width: fit-content;
+    }
+    .list.selected{
+        border:solid 1px var(--border-color);
+    }
+}

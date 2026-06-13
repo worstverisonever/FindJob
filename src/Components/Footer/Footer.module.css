@@ -1,0 +1,144 @@
+:root{
+    --main-color:#4D59CA;
+    --secondar-color:#7C84E9;
+    --text-title-color:#212427;
+    --background-color: #ffffff;
+    --border-color:#707070;
+}
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face {
+    font-family: GraphikLight;
+    src: url(../../Fonts/GraphikLight.otf);
+}
+@font-face {
+    font-family: GraphikThin;
+    src: url(../../Fonts/GraphikExtralight.otf);
+}
+.main footer *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.main footer p{
+    font-family: GraphikThin;
+}
+
+.main{
+display: grid;
+justify-content: center;
+}
+.main footer{
+    background: #4D59CA;
+    height: auto;
+    
+    padding-top: 40px;
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 6rem;
+ max-width: 100vw;
+   overflow: hidden;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footerContent h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: Graphik;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+    font-family: Graphikthin;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    margin-bottom: 1rem;
+}
+.socials li{
+    margin: 0 3px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+.socials a img{
+   height: 20px;
+    width: 20px;
+
+    transition: color .4s ease;
+
+}
+.socials a:hover img{
+    color: aqua;
+}
+
+.footerBottom{
+    background: #4D59CA;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 3px;
+
+    text-align: center;
+}
+.footerBottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footerBottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footerBottom  span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footerMenu{
+  float: right;
+
+}
+.footerMenu ul{
+  display: flex;
+}
+.footerMenu ul li{
+padding-right: 10px;
+display: block;
+}
+.footerMenu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footerMenu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footerMenu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}

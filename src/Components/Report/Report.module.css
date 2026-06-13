@@ -1,0 +1,43 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face{
+    font-family: Grapikthin;
+    src:url(../../Fonts/Means_Light_Web.otf)
+}
+:root{
+    --main-color:#4D59CA;
+    --secondar-color:#7C84E9;
+    --text-title-color:#212427;
+    --background-color: #ffffff;
+    --border-color:#707070;
+}
+.report{
+    padding: 1rem;
+}
+.report ul{
+    list-style: none;
+    margin: 0;
+  padding: 0;
+}
+.report ul li{
+    margin: 0.5rem 0rem;
+}
+.report label{
+    color:var(--text-title-color);
+    font-family: Graphikthin;
+    font-size: 100%;
+}
+.report textarea{
+    width: 19rem;
+    height: 5rem;
+    margin-top: 5px;
+}
+.report textarea::placeholder{
+    font-family: Graphikthin;
+}
+.report button{
+    margin-top: 1rem;
+    width:100%;
+}

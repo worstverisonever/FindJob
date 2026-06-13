@@ -1,0 +1,254 @@
+*{
+ font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 20px);
+ box-sizing: border-box;
+}
+body{
+  background-color: #F5F5F5;
+margin-top: 120px;
+
+}
+.navbar{
+  width: 100vw;
+  position:fixed;
+  top:0;
+  background-color: #ffffff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px -4px rgba(32, 32, 32, 0.2);
+}
+.navbar .reports{
+  background-color: red;
+  color:#fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  font-size:60%;
+  padding: 1px;
+  vertical-align: text-top;
+}
+.secondwrapper{
+  width: 100vw;
+    height: fit-content;
+    max-width: 1400px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.logo img{
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-right: 0.52rem;
+  vertical-align: middle;
+  }
+  .navbar .searchBar{
+    flex:1;
+    display: flex;
+    align-items: center;
+  } 
+  .navbar .searchBar div{
+    border:1px solid #ABA7A7 ;
+    height: 2rem;
+    display: grid;
+    align-items: center;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 4px;
+  }
+  .navbar .searchBar img{
+    width: inherit;
+    height: 1.3rem;
+  }
+  .navbar  input{
+  flex: 1;
+    height: 2rem;
+    border-radius: 10px;
+    border-color: #ABA7A7;
+    border-width: 1px;
+    background-size: 1.2rem;
+    background-position: center left 5px;
+border-left:none;
+border-top-left-radius:0 ;
+border-bottom-left-radius: 0;
+  }
+  .navbar input:focus{
+    outline: none;
+  }
+.list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li {
+   cursor: pointer;
+
+  }
+  
+  .closebtn{
+    display:none;
+  }
+  li a {
+    display: block;
+    color:#6B6C6D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover{
+    color: #4E5ACA;
+  }
+  .showbar{
+    display: none;
+  }
+   li .listlogo img{
+    display: none;
+   }
+   li .icon{
+    display: none;
+   }
+   
+  @media screen and (max-width: 1050px) {
+    .menuButton{
+      width: 1.7rem;
+      height: 1.7rem;
+      justify-self:right;
+    }
+  .navbar input{
+    flex: 0.9;
+  }
+    .showbar{
+      display: grid;
+     grid-area: menu;
+     justify-content: right;
+      border-color: white;
+      background-color: white;
+      border-style: none;
+ margin-left: auto;
+    }
+    .list {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      background-color: #333;
+      width: 0px;
+      height:100vh;
+      transition: all 0.3s ease-out;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0;
+      z-index: 30;
+    }
+
+   .backdrop{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 10;
+      background: rgba(119, 117, 117,0.5);
+    }
+    .list.active {
+      width: 35vw;
+      z-index: 100;
+      background: rgba(255, 255, 255, 1);
+    }
+    
+    .list li  {
+      margin-right: unset;
+      margin-top: 10px;
+      padding: 10px 0px 10px 0px;
+    }
+    ul li a{
+      display: inline-block;
+      font-size: 1.2rem;
+      padding: 0px;
+      text-align: initial;
+    }
+    ul li .icon{
+      vertical-align: text-top;
+     width: 1.3rem;
+     height: 1.3rem;
+     margin: 0px 4px 0px 9px;
+     display: inline;
+
+    }
+    ul li .createAccount{
+      color: #4E5ACA;
+    }
+  li  .listlogo img{
+      display: inline-block;
+      position: absolute;
+top:3px;
+left: 6px;
+      width: 3rem;
+      height: 3rem;
+      }
+  }
+  @media (max-width: 600px) {
+    body{
+      margin-top: 123.594px;
+    }
+    .navbar{
+      flex-flow:column wrap;  
+    }
+   .secondwrapper{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: auto;
+ grid-template-areas: 
+ "logo  menu"
+ "searchBar searchBar ";
+   }
+   .list.active{
+    width: 70vw;
+   }
+   .logo{
+    grid-area: logo;
+    align-self: center;
+   }
+   
+    .navbar .searchBar{
+      width: 90%;
+      padding-right:0 ;
+      height: 2.7rem;
+      display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    grid-area: searchBar;
+ margin-bottom: 10px;
+
+    }
+    .navbar .searchBar div{
+      height: 2.7rem;
+      padding-right: 0;
+    }
+    .navbar .searchBar img{
+      height: 1.4rem;
+    }
+.navbar input{
+  height: 2.7rem;
+  padding: 0;
+}
+    .break{
+      flex-basis: 100%;
+      height: 0;
+    }
+  }
+  @media (max-width:320px) {
+     .list.active{
+      width: 80vw;
+    }
+  }

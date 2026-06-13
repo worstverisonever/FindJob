@@ -1,0 +1,47 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face {
+    font-family: GraphikLight;
+    src: url(../../Fonts/GraphikLight.otf);
+}
+@font-face {
+    font-family: GraphikThin;
+    src: url(../../Fonts/GraphikExtralight.otf);
+}
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.secondaryContainer{
+    margin-top: 1rem;
+    background-color: white;
+    max-width: 60ch;
+text-align: center;
+padding: 1rem;
+border-radius: 15px;
+
+}
+.secondaryContainer h1{
+    font-family: Graphik;
+    color:#4D59CA;
+}
+.secondaryContainer p{
+    font-family: GraphikLight;
+}
+.secondaryContainer form button{
+    background-color:#7C84E9 ;
+    color: white;
+    margin: 40px 0 20px 0;
+    border: 1px solid #6B6C6D;
+    border-radius: 15px;
+width: 9rem;
+height: 2.2rem;
+font-family: Graphik;
+}
+.secondaryContainer form button:hover{
+    color:#7C84E9;
+    background-color: white;
+}

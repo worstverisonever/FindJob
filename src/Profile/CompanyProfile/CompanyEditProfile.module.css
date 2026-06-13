@@ -1,0 +1,200 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face {
+    font-family: GraphikLight;
+    src: url(../../Fonts/GraphikLight.otf);
+}
+@font-face {
+    font-family: GraphikThin;
+    src: url(../../Fonts/GraphikExtralight.otf);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0rem 0;
+    
+}
+
+.container form h3{
+    font-family: Graphik;
+    color:#4D59CA;
+    text-align: center;
+}
+.container form label:first-of-type{
+    margin-top: 8px;
+}
+.container form label{
+    font-family: GraphikLight;
+    display: inline-block;
+    margin: 20px 0 3px 0;
+    color: #6B6C6D;
+  
+}
+
+
+.container form input,.container form select{
+border: 1px solid #6B6C6D;
+/* border-radius: 15px; */
+height: 1.86rem;
+padding: 0 0.5rem ;
+width: 100%;
+font-family: GraphikThin;
+color:#6B6C6D;
+}
+.container form textarea{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: GraphikThin;
+color:#6B6C6D;
+overflow: auto;
+width: 100%;
+    padding: 0.3rem 0.5rem;
+}
+.container form select{
+    text-align: center;
+    font-size: 95%;
+}
+.container input::placeholder{
+    color:#6B6C6D;
+    font-family: GraphikThin;
+    font-size: medium;
+}
+
+
+.container label img{
+    width: 4rem;
+    border-radius: 50%;
+height: 4rem;
+   cursor: pointer;
+
+}
+.container .img{
+    text-align: center;
+}
+.container label img:nth-child(2){
+    position: relative;
+top:-60px;
+right: 1.3rem;
+    width: 1.3rem;
+    border-radius: 0;
+}
+.container input[type=file]{
+    height: 2.7rem;
+    padding-top: 0.6rem;
+}
+.container input[type=file]::file-selector-button {
+ color:white;
+ background-color: #7C84E9;
+ border: none;
+ cursor: pointer;
+  }
+ .container input[type=file]::file-selector-button:hover {
+    background: white;
+    color:#7C84E9;
+  }
+.container .star{
+    color: red;
+}
+.container form select option{
+    color: #6B6C6D;
+
+}
+.links{
+    display: flex;
+    margin: 20px 0;
+    height: 1.86rem;
+    align-items: center;
+}
+.container form .links label{
+    border: 1px solid #6B6C6D;
+    display: inline-block;
+    border-right: none;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+}
+.container form  .errorText{
+color:red;
+font-size: small;
+font-family: GraphikLight;
+}
+.container .button{
+    text-align: center;
+}
+.container form button{
+    background-color:#7C84E9 ;
+    color: white;
+    margin: 15px 0 20px 0;
+    border: 1px solid #6B6C6D;
+    border-radius: 15px;
+width: 9rem;
+height: 2.2rem;
+font-family: Graphik;
+}
+.container form button:hover{
+    color:#7C84E9;
+    background-color: white;
+}
+.container form .button p{
+    color: #6B6C6D;
+    font-family: GraphikThin;
+    font-size: 80%;
+}
+.container form .button a{
+    color:#4D59CA;
+    font-size: 100%;
+}
+.container form button:disabled{
+    background-color: #B8BFC6;
+    color: white;
+    border: none;
+    
+    }
+.container form button:disabled:hover{
+      background-color: #B8BFC6;
+      border: none;
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+@media (max-width:600px) {
+    .container{
+        margin-top: 2px;
+    }
+    .container form{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .container form h3{
+        font-size: 120%;
+    }
+    .container form label{
+        font-size: 120%;
+    }
+    .container form input,.container form select{
+        height: 2.4rem;
+
+    }
+
+  .container form select{
+    font-size: 120%;
+  }
+    .container form input::placeholder{
+        font-size: 110%;
+    }
+    .container form .links label{
+        height: 2.4rem;
+        font-size: 70%;
+    }
+    .container form button{
+        width: 12rem;
+        height: 2.7rem;
+ 
+        font-size: 120%;
+    }
+}
+

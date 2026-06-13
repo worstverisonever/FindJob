@@ -1,0 +1,181 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face {
+    font-family: GraphikLight;
+    src: url(../../Fonts/GraphikLight.otf);
+}
+@font-face {
+    font-family: GraphikThin;
+    src: url(../../Fonts/GraphikExtralight.otf);
+}
+
+:root{
+    --main-color:#4D59CA;
+    --secondar-color:#7C84E9;
+    --text-title-color:#212427;
+    --background-color: #ffffff;
+    --border-color:#707070;
+}
+.mainContainer{
+    max-width: min(1400px,100vw);
+    margin: 0px auto;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 14;
+    background: rgba(119, 117, 117,0.5);
+  }
+ .report{
+    width: 70%;
+    max-width: 500px;
+    min-width: 350px;
+    height: fit-content;
+    position: fixed;
+    background-color: #fff;
+    top:0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin:auto;
+    z-index: 50;
+    border-radius: 15px;
+}
+.secondaryContainer{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: start;
+    justify-items: start;
+    width: 100vw;
+    overflow: hidden;
+    max-width: min(1400px,100%);
+    padding:0  0.5rem;
+}
+.mainContainer .aside{
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+    padding:0rem 0.3rem;
+    grid-template-rows: auto;
+}
+.mainContainer .addJobButton{
+    display: none;
+}
+.mainContainer .button{
+    display: none;
+}
+.mainContainer .emptyJobs{
+        width: 100%;
+        height: 100%;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+}
+.mainContainer .emptyJobs p{ 
+color:var(--border-color);
+font-family: Graphik;
+}
+@media (max-width:720px) {
+    .mainContainer{
+        margin-top: 9rem;
+    }
+    .filter{
+        display: none;
+         position: absolute;
+         overflow: hidden;
+         height:100%;
+         border-radius: 0;
+     }
+     .filter.active{
+         z-index: 100;
+        display: block;
+        height: 100vh;
+     }
+     .secondaryContainer{
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+        justify-items: center;
+     }
+     .mainContainer .button{
+        display: block;
+         background-color: white;
+         box-shadow: none;
+         border: solid 1px #4D59CA;
+         border-radius: 10px;
+         width:6rem;
+         margin: 1rem 0rem 0 1rem;
+     }
+     .mainContainer .button img{
+         width:1.5rem;
+         vertical-align:middle;
+     }
+     .mainContainer .addJobButton{
+        position: fixed;
+      width: 65px;
+      height: 65px;
+      background-color: #4D59CA;
+      border: none;
+      border-radius: 50%;
+      right: 15px;
+     bottom: 20px;
+      margin: auto;
+      color: white;
+      line-height: 65px;
+      text-align: center;
+      font-size: 23px;
+      z-index: 9;
+      box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+   display: inline-block;
+    }
+    .mainContainer .addJobButton:hover{
+        color: #4D59CA;
+        background-color: white;
+        border:1px solid #4D59CA;
+    }
+    .mainContainer .aside .addJobForm{
+        display: none;
+    }
+    .mainContainer .aside .addJobForm.active{
+        display:block;
+        position: fixed;
+        z-index: 15;
+        width: 100vw;
+        border-radius: 10rem;
+        left: 0;
+        top:15%;
+    }
+    
+}
+@media (max-width:350px){
+    .report{
+        min-width: 250px;
+    }
+    .report textarea{
+        width: 14rem !important;
+    }
+}
+@media (min-width: 720px)  and (max-width:1000px) {
+    .secondaryContainer{
+        grid-template-columns: 35% 65%;
+
+    }
+    .mainContainer .button{
+        display: none;
+    }
+}
+@media (min-width:1450px) {
+    .secondaryContainer{
+        padding-left: 0rem;
+    }
+    .mainContainer .button{
+        display: none;
+    }
+}

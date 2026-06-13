@@ -1,0 +1,32 @@
+.pagination{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.pageLink{
+    border: solid 1px #ABA7A7;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.activelink{
+ 
+    border-color: #4E5ACA;
+}
+.activelink a{
+    color: #4E5ACA;
+}
+li:hover{
+    border-color: #4E5ACA;
+}
+li .icon{
+    width: 1rem;
+    height: 1rem;
+}
+.pageLink button{
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: none;
+width: 100%;
+height: 100%;
+}

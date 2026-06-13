@@ -1,0 +1,62 @@
+@font-face {
+    font-family:Graphik ;
+    src: url(../../Fonts/GraphikMedium.otf);
+}
+@font-face{
+    font-family: Grapikthin;
+    src:url(../../Fonts/Means_Light_Web.otf)
+}
+:root{
+    --main-color:#4D59CA;
+    --secondar-color:#7C84E9;
+    --text-title-color:#212427;
+    --background-color: #ffffff;
+    --border-color:#707070;
+}
+.mainContainer{
+    width: 100%;
+    background-color:white ;
+    display: grid;
+    row-gap: 0.3rem;
+    padding: 0.9rem 0.5rem;
+    box-shadow: 0 0px 8px 0.5px rgba(141, 135, 135, 0.25);
+    border-radius: 0.7rem;
+}
+.mainContainer h3{
+    font-family: Graphik;
+    margin-top: 0;
+}
+.formList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.formList p{
+    font-family: Graphik;
+ font-size: 95%;
+
+}
+.formList input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    height: 2rem;
+    margin: 0.5rem 0rem;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+}
+.formList input.invalid{
+    border-color: red;
+}
+
+.formList li label{
+    color:var(--border-color);
+    font-size: 90%;
+}
+.formList .Button{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+ 
+}
