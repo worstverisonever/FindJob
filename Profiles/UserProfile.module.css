@@ -1,0 +1,83 @@
+@font-face {
+  font-family:Graphik ;
+  src: url(../Fonts/GraphikMedium.otf);
+}
+@font-face {
+  font-family: GraphikLight;
+  src: url(../Fonts/GraphikLight.otf);
+}
+@font-face {
+  font-family: GraphikThin;
+  src: url(../Fonts/GraphikExtralight.otf);
+}
+.userprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+
+  }
+  
+  .userprofile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .userprofile h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: Graphik;
+  }
+  
+  .userprofile h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .userprofile p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .userprofile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .userprofile li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .userprofile li strong {
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: GraphikThin;
+  }
+  .editprofilebtn {
+    background-color: #7C84E9;
+    color: #fff;
+    border: none;
+    width:9rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+   border: 1px solid #6B6C6D;
+   margin: 1rem 0;
+  }
+  
+  .editprofilebtn:hover {
+   color:#7C84E9;
+   background-color: #fff;
+  }
+  
